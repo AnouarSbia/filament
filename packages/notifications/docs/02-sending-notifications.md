@@ -275,7 +275,7 @@ Notification::make()
     ->actions([
         Action::make('view')
             ->button()
-            ->url(route('posts.show', $post), shouldOpenInNewTab: true)
+            ->url(route('posts.show', $post), shouldOpenInNewTab: true),
         Action::make('undo')
             ->color('gray'),
     ])
